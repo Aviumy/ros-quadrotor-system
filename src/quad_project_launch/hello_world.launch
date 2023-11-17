@@ -1,0 +1,7 @@
+<launch>
+
+    <param name="/hello_world_publish_frequency" type="double" value="3.0" />
+
+    <node name="hello_world" pkg="quad_project" type="hello_world.py" />
+
+</launch>
