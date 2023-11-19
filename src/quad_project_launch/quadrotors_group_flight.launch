@@ -40,4 +40,8 @@
   <!-- Start controller node -->
   <node name="quadrotors_group_flight_controller" pkg="quad_project" type="quadrotors_group_flight_controller.py" />
 
+  <!-- Start drone nodes -->
+  <node name="quadrotor1" pkg="quad_project" type="quadrotor_controller.py" args="_/quadrotor_number:=1" />
+  <node name="quadrotor2" pkg="quad_project" type="quadrotor_controller.py" args="_/quadrotor_number:=2" />
+
 </launch>
