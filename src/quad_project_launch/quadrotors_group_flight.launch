@@ -35,7 +35,7 @@
 
   <!-- Set parameters -->
   <param name="/quadrotor_count" type="int" value="2" />
-  <param name="/cmd_vel_publish_frequency" type="double" value="1.0" />
+  <param name="/controller_publish_frequency" type="double" value="0.5" />
 
   <!-- Start controller node -->
   <node name="quadrotors_group_flight_controller" pkg="quad_project" type="quadrotors_group_flight_controller.py" />
