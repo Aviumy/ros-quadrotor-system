@@ -3,7 +3,8 @@
 <launch>
 
   <!-- Start Gazebo with wg world running in (max) realtime -->
-  <include file="$(find hector_gazebo_worlds)/launch/rolling_landscape_120m.launch"/>
+  <!-- <include file="$(find hector_gazebo_worlds)/launch/rolling_landscape_120m.launch"/> -->
+  <include file="$(find quad_project_launch)/turtlebot3_house.launch"/>
 
   <!-- Spawn simulated quadrotors uav -->
   <arg name="model" default="$(find hector_quadrotor_description)/urdf/quadrotor.gazebo.xacro" />
@@ -14,7 +15,8 @@
        <arg name="name" value="uav1" />
        <arg name="tf_prefix" value="uav1" />
        <arg name="model" value="$(arg model_laser)" />
-       <arg name="y" value="-2.0" />
+       <arg name="x" value="4.0" />
+       <arg name="y" value="2.0" />
      </include>
    </group>
 
@@ -23,7 +25,7 @@
        <arg name="name" value="uav2" />
        <arg name="tf_prefix" value="uav2" />
        <arg name="model" value="$(arg model)" />
-       <arg name="y" value="2.0" />
+       <arg name="y" value="-2.0" />
      </include>
    </group>
 

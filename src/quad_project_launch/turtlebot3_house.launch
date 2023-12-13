@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<launch>
+  <include file="$(find hector_gazebo_worlds)/launch/start.launch">
+   <arg name="world" value="$(find turtlebot3_gazebo)/worlds/turtlebot3_house.world"/> 
+  </include>
+
+</launch>
